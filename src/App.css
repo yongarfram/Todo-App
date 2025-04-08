@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.done {
+  text-decoration: line-through;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+li {
+  list-style-type: none;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.flex {
+  display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoList {
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todoContent {
+  flex-basis: 40%;
+  padding-left: 10px;
 }
 
-.card {
-  padding: 2em;
+.todo {
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  gap: 10px;
+  border: 0px solid black;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(209, 200, 200);
 }
 
-.read-the-docs {
-  color: #888;
+.todoButton {
+  flex-basis: 10%;
+  height: 30px;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+.todoCheck {
+  flex-basis: 5%;
+}
+
+.todoInputCorrect {
+  display: block;
+  flex-basis: 40%;
+  font-size: 16;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  height: 30px;
+  font-size: 16px;
+}
+.todoContainer {
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.todoInput {
+  border: 0.5px solid black;
+  width: 200px;
+  padding-left: 10px;
 }
